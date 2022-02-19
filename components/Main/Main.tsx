@@ -14,11 +14,16 @@ const Home = (): JSX.Element => {
           <div>- Hi there</div>
           <div>
             I&apos;m <span style={{ fontWeight: "bold" }}>Martin Mortier</span>
+            <br />
             <br />I like to code things from scratch, and enjoy bringing ideas
             to life in the browser.
           </div>
           <div className={styles.containerButton}>
-            <button>Download my CV</button>
+            <div className={styles.cvButton}>
+              <a href="/Martin_Mortier_CV.pdf" download>
+                Download my CV
+              </a>
+            </div>
           </div>
         </div>
         <div className={styles.rightSection}>

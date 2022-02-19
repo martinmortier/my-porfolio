@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main/Main";
+import About from "../components/About/About";
 const Home: NextPage = () => {
   return (
     <div>
@@ -13,7 +14,9 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <Main />
-          <div style={{ height: "100vh", backgroundColor: "white" }}>TEST</div>
+          <div style={{ height: "100vh", backgroundColor: "white" }}>
+            <About />
+          </div>
         </main>
       </div>
     </div>
