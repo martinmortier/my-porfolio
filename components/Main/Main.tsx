@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Navbar from "../Navbar/Navbar";
-import profilPic from "../../public/profil_picture.png";
+import profilePhoto from "../../public/profile_photo.png";
 import southPic from "../../public/south.png";
 import styles from "./Main.module.css";
 
@@ -14,7 +14,6 @@ const Home = (): JSX.Element => {
           <div>- Hi there</div>
           <div>
             I&apos;m <span style={{ fontWeight: "bold" }}>Martin Mortier</span>
-            <br />
             <br />I like to code things from scratch, and enjoy bringing ideas
             to life in the browser.
           </div>
@@ -27,9 +26,9 @@ const Home = (): JSX.Element => {
           </div>
         </div>
         <div className={styles.rightSection}>
-          <div className={styles.profilPictureContainer}>
+          <div className={styles.profilePhotoContainer}>
             <Image
-              src={profilPic}
+              src={profilePhoto}
               layout="fill"
               alt="profile picture"
               placeholder="blur"

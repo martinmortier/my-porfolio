@@ -17,27 +17,26 @@
 }
 
 .leftSection > :nth-child(1) {
-  font-size: 32px;
+  font-size: 2rem;
   font-style: italic;
   padding-top: 10%;
   padding-bottom: 5%;
 }
 
 .leftSection > div {
-  font-size: 40px;
-  padding-bottom: 15%;
+  font-size: 2rem;
+  padding-bottom: 10%;
 }
 .rightSection {
   width: 50%;
   position: relative;
 }
-.profilPictureContainer {
+.profilePhotoContainer {
   position: absolute;
   height: 85%;
   width: 75%;
   right: 10%;
   bottom: 0%;
-  z-index: 999;
 }
 .rightSection > video {
   width: 100%;
@@ -47,22 +46,29 @@
   border-radius: 60px;
 }
 
-.iconDiv {
-  display: flex;
-  height: 15%;
-  justify-content: center;
-  align-items: center;
-}
-
 .containerButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 0;
 }
 .cvButton {
   background-color: #e22929;
   padding: 25px;
-  font-size: 25px;
+  font-size: 1.5rem;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.iconDiv {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .rightSection {
+    display: none;
+  }
 }

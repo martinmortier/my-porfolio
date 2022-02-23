@@ -14,9 +14,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <main className={styles.main}>
           <Main />
-          <div style={{ height: "100vh", backgroundColor: "white" }}>
-            <About />
-          </div>
+          <About />
         </main>
       </div>
     </div>

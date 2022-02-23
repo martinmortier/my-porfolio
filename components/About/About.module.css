@@ -1,4 +1,114 @@
+.container {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
 .aboutMeContainer {
   display: flex;
-  background-color: red;
+  /* background-color: blue; */
+  height: 50%;
+  padding-top: 5%;
+}
+.emojiContainer {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emojiBackground {
+  background-color: #1c1c1c;
+  border-radius: 60px;
+  width: 80%;
+  height: 100%;
+  position: relative;
+  transform: scaleX(-1);
+}
+/* .emojiImage {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  left: 10%;
+} */
+.textContainer {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.mySkillsContainer {
+  display: flex;
+  height: 50%;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.mySkillsContainer > :nth-child(1) {
+  font-weight: bold;
+  transform: rotate(270deg);
+  font-size: 2rem;
+  flex-basis: 10%;
+}
+
+.mySkillsContainer > :nth-child(2) {
+  flex-basis: 90%;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.inner_carousel {
+  display: flex;
+  /* background-color: lightblue; */
+  position: relative;
+  align-items: center;
+  align-content: center;
+}
+.item {
+  width: 20rem;
+  min-width: 20rem;
+  padding: 40px;
+  min-height: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item span {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    height: auto;
+  }
+  .aboutMeContainer {
+    height: auto;
+  }
+  .rightSection {
+    display: none;
+  }
+  .textContainer {
+    font-size: 1rem;
+  }
+  .mySkillsContainer {
+    height: auto;
+  }
+  .mySkillsContainer > :nth-child(1) {
+    font-weight: bold;
+    transform: rotate(0deg);
+    font-size: 1.5rem;
+    height: auto;
+    flex: 1;
+    text-align: center;
+  }
 }
