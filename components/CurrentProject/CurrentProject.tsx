@@ -7,7 +7,7 @@ import portfolio from "../../public/projects/portfolio.png";
 const CurrentProject = (): JSX.Element => {
   return (
     <div className={styles.container}>
-      Latest Projects
+      <p className={styles.title}>Latest Projects</p>
       <div className={styles.projectsContainer}>
         <div className={styles.leftSection}>
           <div style={{ flex: 1 }}>
