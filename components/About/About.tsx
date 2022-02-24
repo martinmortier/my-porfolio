@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./About.module.css";
 import { motion, useAnimation } from "framer-motion";
 import memoji from "../../public/memoji.png";
-import carouselImages from "../carouselimages";
+import carouselImages from "../carouselImages";
 
 const About = (): JSX.Element => {
   const [width, setWidth] = useState<number>(0);
