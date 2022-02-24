@@ -7,7 +7,7 @@ import carouselImages from "../carouselImages";
 
 const About = (): JSX.Element => {
   const [width, setWidth] = useState<number>(0);
-  const carousel = useRef(null);
+  const carousel = useRef<null | HTMLDivElement>(null);
   const controls = useAnimation();
 
   const sequences = async () => {
@@ -22,7 +22,9 @@ const About = (): JSX.Element => {
     sequences();
   };
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    if (carousel.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
     sequences();
   });
 
