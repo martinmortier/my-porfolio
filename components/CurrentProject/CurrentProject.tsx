@@ -17,6 +17,7 @@ const CurrentProject = (): JSX.Element => {
                 width={magic_card.width}
                 height={magic_card.height}
                 alt="Magic card project"
+                placeholder="blur"
               />
             </div>
           </div>
@@ -27,6 +28,7 @@ const CurrentProject = (): JSX.Element => {
                 height={portfolio.height}
                 width={portfolio.width}
                 alt="Portfolio project"
+                placeholder="blur"
               />
             </div>
           </div>
@@ -38,6 +40,7 @@ const CurrentProject = (): JSX.Element => {
               width={planhess.width}
               height={planhess.height}
               alt="Planhess project"
+              placeholder="blur"
             />
           </div>
         </div>

@@ -13,11 +13,11 @@ const About = (): JSX.Element => {
   const sequences = async () => {
     await controls.start({
       x: -width,
-      transition: { duration: 5, ease: "linear" },
+      transition: { duration: 10, ease: "linear" },
     });
     await controls.start({
       x: 0,
-      transition: { duration: 5, ease: "linear" },
+      transition: { duration: 10, ease: "linear" },
     });
     sequences();
   };
@@ -34,7 +34,12 @@ const About = (): JSX.Element => {
         <div className={styles.emojiContainer}>
           <div className={styles.emojiBackground}>
             <div className={styles.emojiImage}>
-              <Image src={memoji} layout="fill" alt="bitmoji" />
+              <Image
+                src={memoji}
+                layout="fill"
+                alt="bitmoji"
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
@@ -64,7 +69,13 @@ const About = (): JSX.Element => {
             {carouselImages.map((image) => {
               return (
                 <motion.div className={styles.item} key={image.src}>
-                  <Image src={image} alt="" width={230} height={200} />
+                  <Image
+                    src={image}
+                    alt=""
+                    width={230}
+                    height={200}
+                    placeholder="blur"
+                  />
                 </motion.div>
               );
             })}
