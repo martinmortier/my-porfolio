@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Main from "../components/Main/Main";
 import About from "../components/About/About";
+import CurrentProject from "../components/CurrentProject/CurrentProject";
 const Home: NextPage = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
         <main className={styles.main}>
           <Main />
           <About />
+          <CurrentProject />
         </main>
       </div>
     </div>

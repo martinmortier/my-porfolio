@@ -1,16 +1,31 @@
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./About.module.css";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import memoji from "../../public/memoji.png";
 import carouselImages from "../carouselimages";
 
 const About = (): JSX.Element => {
   const [width, setWidth] = useState<number>(0);
   const carousel = useRef(null);
+  const controls = useAnimation();
+
+  const sequences = async () => {
+    await controls.start({
+      x: -width,
+      transition: { duration: 5, ease: "easeOut" },
+    });
+    await controls.start({
+      x: 0,
+      transition: { duration: 5, ease: "easeOut" },
+    });
+    sequences();
+  };
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    sequences();
   });
+
   return (
     <div className={styles.container}>
       <div className={styles.aboutMeContainer}>
@@ -41,6 +56,10 @@ const About = (): JSX.Element => {
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
+            animate={controls}
+            // animate={{ x: -width }}
+            // transition={{ ease: "easeOut", duration: 10 }}
+
             className={styles.inner_carousel}
           >
             {carouselImages.map((image) => {

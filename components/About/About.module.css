@@ -1,5 +1,5 @@
 .container {
-  background-color: white;
+  background-color: #fcfcfc;
   height: 100%;
   width: 100%;
 }
@@ -25,12 +25,11 @@
   position: relative;
   transform: scaleX(-1);
 }
-/* .emojiImage {
-  position: absolute;
+.emojiImage {
+  position: relative;
   height: 100%;
-  width: 80%;
-  left: 10%;
-} */
+  width: 100%;
+}
 .textContainer {
   flex-basis: 50%;
   display: flex;
