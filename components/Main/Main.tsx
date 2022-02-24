@@ -27,12 +27,14 @@ const Home = (): JSX.Element => {
         </div>
         <div className={styles.rightSection}>
           <div className={styles.profilePhotoContainer}>
-            <Image
-              src={profilePhoto}
-              layout="fill"
-              alt="profile picture"
-              placeholder="blur"
-            />
+            <div className={styles.profilePhotoRender}>
+              <Image
+                src={profilePhoto}
+                layout="fill"
+                alt="profile picture"
+                placeholder="blur"
+              />
+            </div>
           </div>
           <video className="codingVideo" autoPlay muted loop>
             <source src="/coding_vid.mp4" type="video/mp4" />
