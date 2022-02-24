@@ -12,18 +12,33 @@ const CurrentProject = (): JSX.Element => {
         <div className={styles.leftSection}>
           <div style={{ flex: 1 }}>
             <div className={styles.imageContainer}>
-              <Image src={magic_card} layout="fill" alt="Magic card project" />
+              <Image
+                src={magic_card}
+                width={magic_card.width}
+                height={magic_card.height}
+                alt="Magic card project"
+              />
             </div>
           </div>
           <div style={{ flex: 1 }}>
             <div className={styles.imageContainer}>
-              <Image src={portfolio} layout="fill" alt="Magic card project" />
+              <Image
+                src={portfolio}
+                height={portfolio.height}
+                width={portfolio.width}
+                alt="Portfolio project"
+              />
             </div>
           </div>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.imageContainer}>
-            <Image src={planhess} layout="fill" alt="Magic card project" />
+            <Image
+              src={planhess}
+              width={planhess.width}
+              height={planhess.height}
+              alt="Planhess project"
+            />
           </div>
         </div>
       </div>

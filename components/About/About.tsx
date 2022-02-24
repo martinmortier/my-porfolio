@@ -13,11 +13,11 @@ const About = (): JSX.Element => {
   const sequences = async () => {
     await controls.start({
       x: -width,
-      transition: { duration: 5, ease: "easeOut" },
+      transition: { duration: 5, ease: "linear" },
     });
     await controls.start({
       x: 0,
-      transition: { duration: 5, ease: "easeOut" },
+      transition: { duration: 5, ease: "linear" },
     });
     sequences();
   };
@@ -57,9 +57,6 @@ const About = (): JSX.Element => {
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
             animate={controls}
-            // animate={{ x: -width }}
-            // transition={{ ease: "easeOut", duration: 10 }}
-
             className={styles.inner_carousel}
           >
             {carouselImages.map((image) => {
