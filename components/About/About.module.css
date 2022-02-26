@@ -6,21 +6,23 @@
 
 .aboutMeContainer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   /* background-color: blue; */
   height: 50%;
   padding-top: 5%;
 }
 .emojiContainer {
-  flex-basis: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .emojiBackground {
   background-color: #1c1c1c;
   border-radius: 60px;
-  width: 80%;
+  width: 60%;
   height: 100%;
   position: relative;
   transform: scaleX(-1);
@@ -30,12 +32,16 @@
   height: 100%;
   width: 100%;
 }
+
+.aboutMeTitle {
+  margin: 0;
+}
 .textContainer {
-  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 1.5rem;
+  width: 50%;
 }
 
 .mySkillsContainer {
@@ -93,6 +99,14 @@
   .aboutMeContainer {
     height: auto;
   }
+
+  .emojiContainer {
+    width: 100%;
+  }
+  .emojiBackground {
+    width: 200px;
+    height: 200px;
+  }
   .rightSection {
     display: none;
   }
@@ -105,7 +119,6 @@
   .mySkillsContainer > :nth-child(1) {
     font-weight: bold;
     transform: rotate(0deg);
-    font-size: 1.5rem;
     height: auto;
     flex: 1;
     text-align: center;

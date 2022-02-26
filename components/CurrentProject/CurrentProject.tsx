@@ -4,10 +4,10 @@ import magic_card from "../../public/projects/magic_card.png";
 import planhess from "../../public/projects/planhess.png";
 import portfolio from "../../public/projects/portfolio.png";
 
-const CurrentProject = (): JSX.Element => {
+const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
   return (
-    <div className={styles.container}>
-      <p className={styles.title}>Latest Projects</p>
+    <div className={styles.container} ref={currentProjectRef}>
+      <h1 className={styles.title}>Latest Projects</h1>
       <div className={styles.projectsContainer}>
         <div className={styles.leftSection}>
           <div style={{ flex: 1 }}>

@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .main {
   padding-right: 5%;

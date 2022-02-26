@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import memoji from "../../public/memoji.png";
 import carouselImages from "../carouselImages";
 
-const About = (): JSX.Element => {
+const About = ({ aboutRef }: any): JSX.Element => {
   const [width, setWidth] = useState<number>(0);
   const carousel = useRef<null | HTMLDivElement>(null);
   const controls = useAnimation();
@@ -29,7 +29,7 @@ const About = (): JSX.Element => {
   });
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={aboutRef}>
       <div className={styles.aboutMeContainer}>
         <div className={styles.emojiContainer}>
           <div className={styles.emojiBackground}>
@@ -45,7 +45,7 @@ const About = (): JSX.Element => {
         </div>
         <section className={styles.textContainer}>
           <p>
-            <span style={{ fontWeight: "bold" }}>- About me</span>
+            <h1 className={styles.aboutMeTitle}>- About me</h1>
             <br />
             Hi, I&apos;m Martin. I&apos;m 26 years old, and I&apos;m currently
             located in Tournai, Belgium. I have a computer science degree done

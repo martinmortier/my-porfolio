@@ -4,9 +4,6 @@
 
 .title {
   margin: 0px;
-  padding: 0px 20px 20px 0px;
-  font-size: 2.5rem;
-  font-weight: bold;
   text-align: center;
 }
 .title::after {
@@ -21,6 +18,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.leftSection > :nth-child(1) {
+  background-color: #1c1523;
+}
+.leftSection > :nth-child(2) {
+  background-color: #1c1c1c;
 }
 
 .rightSection {

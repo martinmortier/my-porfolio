@@ -5,10 +5,10 @@ import profilePhoto from "../../public/profile_photo.png";
 import southPic from "../../public/south.png";
 import styles from "./Main.module.css";
 
-const Home = (): JSX.Element => {
+const Home = ({ aboutRef, currentProjectRef }: any): JSX.Element => {
   return (
     <div className={styles.container}>
-      <Navbar />
+      <Navbar aboutRef={aboutRef} currentProjectRef={currentProjectRef} />
       <section className={styles.mainSection}>
         <div className={styles.leftSection}>
           <div>- Hi there</div>
