@@ -44,12 +44,15 @@ const About = ({ aboutRef }: any): JSX.Element => {
           </div>
         </div>
         <section className={styles.textContainer}>
-          <p>
-            <h1 className={styles.aboutMeTitle}>- About me</h1>
-            <br />
-            Hi, I&apos;m Martin. I&apos;m 26 years old, and I&apos;m currently
-            located in Tournai, Belgium. I have a computer science degree done
-            at Haute Ecole Louvain en Hainaut.
+          <h1 className={styles.aboutMeTitle}>- About me</h1>
+          <p className={styles.textDescription}>
+            Hi, I&apos;m Martin. I&apos;m 26 years old and I&apos;m currently
+            located in Rennaz, Switzerland.🇨🇭 <br /> I did a computer science
+            degree at Haute Ecole Louvain en Hainaut in Belgium. <br />I would
+            like to join a team as front-end developer but I can also code in
+            back-end. I&apos;m in love with React so I&apos;d like work with
+            this library. However, I am open-minded and like to learn new things
+            so don&apos;t hesitate to send me offers. 😁
           </p>
         </section>
       </div>

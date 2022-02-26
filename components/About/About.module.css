@@ -44,6 +44,10 @@
   width: 50%;
 }
 
+.textDescription {
+  margin: 0;
+}
+
 .mySkillsContainer {
   display: flex;
   height: 50%;

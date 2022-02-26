@@ -11,7 +11,7 @@ const Home = ({ aboutRef, currentProjectRef }: any): JSX.Element => {
       <Navbar aboutRef={aboutRef} currentProjectRef={currentProjectRef} />
       <section className={styles.mainSection}>
         <div className={styles.leftSection}>
-          <div>- Hi there</div>
+          <div>- 👋 Hi there</div>
           <div>
             I&apos;m <span style={{ fontWeight: "bold" }}>Martin Mortier</span>
             <br />I like to code things from scratch, and enjoy bringing ideas

@@ -10,7 +10,8 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
       <h1 className={styles.title}>Latest Projects</h1>
       <div className={styles.projectsContainer}>
         <div className={styles.leftSection}>
-          <div style={{ flex: 1 }}>
+          <div className={styles.projectContainer}>
+            <p className={styles.projectDescription}>Test</p>
             <div className={styles.imageContainer}>
               <Image
                 src={magic_card}
@@ -21,7 +22,8 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
               />
             </div>
           </div>
-          <div style={{ flex: 1 }}>
+          <div className={styles.projectContainer}>
+            <p className={styles.projectDescription}>Test</p>
             <div className={styles.imageContainer}>
               <Image
                 src={portfolio}
@@ -34,14 +36,17 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
           </div>
         </div>
         <div className={styles.rightSection}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={planhess}
-              width={planhess.width}
-              height={planhess.height}
-              alt="Planhess project"
-              placeholder="blur"
-            />
+          <div className={styles.projectContainer}>
+            <p className={styles.projectDescription}>Test</p>
+            <div className={styles.imageContainer}>
+              <Image
+                src={planhess}
+                width={planhess.width}
+                height={planhess.height}
+                alt="Planhess project"
+                placeholder="blur"
+              />
+            </div>
           </div>
         </div>
       </div>
