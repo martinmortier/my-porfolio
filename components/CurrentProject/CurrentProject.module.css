@@ -45,6 +45,9 @@
   position: absolute;
   color: #fcfcfc;
   visibility: hidden;
+  text-align: center;
+  margin: auto 120px;
+  font-size: 1rem;
 }
 .imageContainer {
   position: relative;
@@ -67,4 +70,11 @@
   position: absolute;
   background-color: red;
   color: #fcfcfc;
+}
+
+@media screen and (max-width: 425px) {
+  .projectDescription {
+    font-size: 0.65rem;
+    margin: auto auto;
+  }
 }

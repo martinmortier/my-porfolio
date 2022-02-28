@@ -9,7 +9,6 @@ import { FaGithub } from "react-icons/fa";
 const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
   return (
     <div className={styles.container} ref={currentProjectRef}>
-      <h1 className={styles.title}>Latest Projects</h1>
       <div className={styles.projectsContainer}>
         <div className={styles.leftSection}>
           <div className={styles.projectContainer}>
@@ -23,7 +22,8 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
               />
             </div>
             <div className={styles.projectDescription}>
-              <p>Magic Match is a flip card memory game.</p>
+              <p>Magic Match is a flip card memory game</p>
+              <p>Made with React</p>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
                 <Link href="https://github.com/martinmortier/magic-memory">
                   <div>
@@ -31,7 +31,7 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
                   </div>
                 </Link>
                 <Link href="https://magic-memory-mbtakvyhl-martinmortier.vercel.app/">
-                  Play with it
+                  <a>Play with it</a>
                 </Link>
               </div>
             </div>
@@ -47,10 +47,13 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
               />
             </div>
             <div className={styles.projectDescription}>
-              <p>Test 2</p>
+              <p>My personal website</p>
+              <p>Made with NextJS</p>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <Link href="https://www.google.fr">
-                  <FaGithub size="2em" />
+                <Link href="https://github.com/martinmortier/my-porfolio">
+                  <a>
+                    <FaGithub size="2em" style={{ cursor: "pointer" }} />
+                  </a>
                 </Link>
               </div>
             </div>
@@ -59,10 +62,28 @@ const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
         <div className={styles.rightSection}>
           <div className={styles.projectContainer}>
             <div className={styles.projectDescription}>
-              <p>Test 3</p>
+              <p>
+                Planhess is currently my biggest project with React and Node.
+                This is an app used to take an overview of which discounts are
+                available for the day in your city. <br />
+                In relation with this instagram page, we worked together to get
+                the first version available.
+              </p>
+              <p>
+                Made with <br />
+                React native <br />
+                Amazon Web Services hosting MySQL database
+                <br />
+                NodeJS - ExpressJS framework and Prisma (ORM)
+                <br />
+                Both front-end and back-end work with GraphQL thank to Apollo
+                <br />
+              </p>
               <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <Link href="https://www.google.fr">
-                  <FaGithub size="2em" />
+                <Link href="https://github.com/planhess/planhess">
+                  <a>
+                    <FaGithub size="2em" style={{ cursor: "pointer" }} />
+                  </a>
                 </Link>
               </div>
             </div>
