@@ -52,7 +52,7 @@ const About = ({ aboutRef }: any): JSX.Element => {
             like to join a team as front-end developer but I can also code in
             back-end. I&apos;m in love with React so I&apos;d like work with
             this library. However, I am open-minded and like to learn new things
-            so don&apos;t hesitate to send me offers. 😁
+            so feel free to send me some offers. 😁
           </p>
         </section>
       </div>
