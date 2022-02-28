@@ -42,7 +42,15 @@ const Home = ({ aboutRef, currentProjectRef }: any): JSX.Element => {
         </div>
       </section>
       <div className={styles.iconDiv}>
-        <Image src={southPic} height={40} width={40} />
+        <div className={styles.downArrow}>
+          <Image
+            src={southPic}
+            height={40}
+            width={40}
+            alt="down arrow"
+            onClick={() => aboutRef.current.scrollIntoView()}
+          />
+        </div>
       </div>
     </div>
   );

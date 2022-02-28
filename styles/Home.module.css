@@ -1,13 +1,17 @@
 .container {
   background-color: #1c1c1c;
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 .main {
   padding-right: 5%;
   padding-left: 5%;
-  height: 100%;
-  width: 100%;
+}
+
+.footer {
+  color: white;
+}
+.footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

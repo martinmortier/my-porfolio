@@ -116,6 +116,7 @@
   }
   .textContainer {
     font-size: 1rem;
+    width: 90%;
   }
   .mySkillsContainer {
     height: auto;

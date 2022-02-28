@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Main from "../components/Main/Main";
 import About from "../components/About/About";
 import CurrentProject from "../components/CurrentProject/CurrentProject";
+import { BsSuitHeartFill } from "react-icons/bs";
 const Home: NextPage = () => {
   const aboutRef = useRef<null | HTMLDivElement>();
   const currentProjectRef = useRef<null | HTMLDivElement>(null);
@@ -22,6 +23,13 @@ const Home: NextPage = () => {
           <About aboutRef={aboutRef} />
           <CurrentProject currentProjectRef={currentProjectRef} />
         </main>
+        <footer className={styles.footer}>
+          <div>
+            <p>
+              Made with <BsSuitHeartFill color="red" />
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );

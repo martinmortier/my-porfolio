@@ -1,7 +1,6 @@
 import styles from "./Navbar.module.css";
 
 const Navbar = ({ aboutRef, currentProjectRef }: any): JSX.Element => {
-  console.log(aboutRef, currentProjectRef);
   return (
     <div className={styles.container}>
       <div style={{ display: "flex" }}>
