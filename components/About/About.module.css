@@ -129,3 +129,10 @@
     text-align: center;
   }
 }
+
+@media screen and (width: 1024px) {
+  .emojiBackground {
+    width: 90%;
+    height: 70%;
+  }
+}
