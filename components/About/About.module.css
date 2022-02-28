@@ -130,9 +130,16 @@
   }
 }
 
-@media screen and (width: 1024px) {
+@media screen and (max-width: 1024px) {
   .emojiBackground {
     width: 90%;
     height: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .emojiBackground {
+    width: 80%;
+    height: 60%;
   }
 }
