@@ -50,7 +50,7 @@ const About = ({ aboutRef }: any): JSX.Element => {
             located in Rennaz, Switzerland.🇨🇭 <br /> I did a computer science
             degree at Haute Ecole Louvain en Hainaut in Belgium. <br />I would
             like to join a team as front-end developer but I can also code in
-            back-end. I&apos;m in love with React so I&apos;d like work with
+            back-end. I&apos;m in love with React so I&apos;d like to work with
             this library. However, I am open-minded and like to learn new things
             so feel free to send me some offers. 😁
           </p>

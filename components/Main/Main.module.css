@@ -71,6 +71,16 @@
   height: 5rem;
   justify-content: center;
   align-items: center;
+  animation: 1s linear 0s infinite alternate upAndDown;
+}
+
+@keyframes upAndDown {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
