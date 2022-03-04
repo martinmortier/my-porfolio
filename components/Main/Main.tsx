@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import Navbar from "../Navbar/Navbar";
-import profilePhoto from "../../public/profile_photo.png";
-import southPic from "../../public/south.png";
+import profilePhoto from "../../public/profile_photo.webp";
+import southPic from "../../public/down.webp";
 import styles from "./Main.module.css";
 
 const Home = ({ aboutRef, currentProjectRef }: any): JSX.Element => {

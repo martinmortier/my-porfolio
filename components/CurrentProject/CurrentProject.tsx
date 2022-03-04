@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./CurrentProject.module.css";
-import magic_card from "../../public/projects/magic_card.png";
-import planhess from "../../public/projects/planhess.png";
-import portfolio from "../../public/projects/portfolio.png";
+import magic_card from "../../public/projects/magic_card.webp";
+import planhess from "../../public/projects/planhess.webp";
+import portfolio from "../../public/projects/portfolio.webp";
 import { FaGithub } from "react-icons/fa";
 
 const CurrentProject = ({ currentProjectRef }: any): JSX.Element => {
