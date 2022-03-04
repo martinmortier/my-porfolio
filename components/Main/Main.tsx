@@ -37,7 +37,7 @@ const Home = ({ aboutRef, currentProjectRef }: any): JSX.Element => {
             </div>
           </div>
           <video className="codingVideo" autoPlay muted loop>
-            <source src="/coding_vid.mp4" type="video/mp4" />
+            <source src="/coding_vid_compressed.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
